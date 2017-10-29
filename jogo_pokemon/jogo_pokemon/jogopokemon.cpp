@@ -8,7 +8,8 @@
 
 int main()
 {
-	int matriz[6][6] = { 0 };
+	int matriz[TAM][TAM] = { 0 };
+	cout << endl;
 	mostra_tabuleiro(matriz);
 
 	system("pause");
