@@ -4,11 +4,11 @@
 #include "stdafx.h"
 #include<iostream>
 #include"interface.h"
-
+#include<string>
 
 int main()
 {
-	int matriz[TAM][TAM] = { 0 };
+ char  matriz[TAM][TAM] = { " " };
 	cout << endl;
 	mostra_tabuleiro(matriz);
 
