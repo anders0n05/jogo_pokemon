@@ -8,7 +8,7 @@ using namespace std;
 
 
 
-void mostra_tabuleiro(char matriz[TAM][TAM]) {
+void mostra_tabuleiro(string matriz[TAM][TAM]) {
 	inicia_tabuleiro(matriz);
 	cout << endl;
 	cout << "\t";

@@ -8,7 +8,7 @@
 
 int main()
 {
- char  matriz[TAM][TAM] = { " " };
+ string matriz[TAM][TAM] = { " " };
 	cout << endl;
 	mostra_tabuleiro(matriz);
 
