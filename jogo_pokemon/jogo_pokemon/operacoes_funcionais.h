@@ -28,8 +28,9 @@ void inicia_tabuleiro(char matriz[TAM][TAM]) {
 	
 	posicao_coluna.x = rand() % 2;
 	posicao_linha.y = rand() % TAM;
-	if (posicao_coluna.x == 3) {// para nao sortear o lugar do jogador logo de cara
-		posicao_coluna.x = rand() % 2;
+	if (posicao_coluna.x == 3|| posicao_linha.y==3) {// para nao sortear o lugar do jogador logo de cara
+		posicao_coluna.x = 0;
+		posicao_linha.y= 2;
 	}
 	for (int i = 0; i < TAM; i++) {
 		for (int j = 0; j< TAM; j++) {
