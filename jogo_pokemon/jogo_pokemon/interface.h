@@ -6,7 +6,7 @@ using namespace std;
 #define INTERFACE_H
 #include<string>
 
-
+using namespace std;
 
 void mostra_tabuleiro(string matriz[TAM][TAM]) {
 	inicia_tabuleiro(matriz);
@@ -19,12 +19,12 @@ void mostra_tabuleiro(string matriz[TAM][TAM]) {
 		for (int j = 0; j< TAM; j++) {
 		
 			
-			cout << "³°°" << matriz[i][j] << "°°³";
+			cout << "³°°" << matriz[i][j]<< "°°³";
 			
-			cout << "\t";
+			
 		}
 		
-		cout << endl << endl << endl;
+		cout << endl << endl;
 	}
 
 

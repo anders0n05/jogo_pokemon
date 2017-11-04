@@ -4,7 +4,8 @@
 #include<string>
 #include<stdlib.h>
 #include<time.h>
-#include"Movimentacao.h"
+
+using namespace std;
 struct Jogador {
 	string nome;
 	
@@ -19,12 +20,12 @@ struct Adversario {
 void inicia_tabuleiro(string matriz[TAM][TAM]) {
 	srand(time(NULL));
 	Jogador jogador; Adversario adversario, posicao_coluna, posicao_linha;
-	jogador.nome = 'P';
-	adversario.nome[0] = 'A';
-	adversario.nome[1] = 'A';
-	adversario3.nome[2] = 'A';
-	adversario4.nome[3] = 'A';
-	
+	jogador.nome = "J";
+	adversario.nome[0] = "A1";
+	adversario.nome[1] = "A2";
+	adversario.nome[2] = "A3";
+	adversario.nome[3] = "A4";
+
 	
 	posicao_coluna.x = rand() % 2;
 	posicao_linha.y = rand() % TAM;
@@ -52,6 +53,21 @@ void inicia_tabuleiro(string matriz[TAM][TAM]) {
 
 
 
+bool busca_personagem(int posicao_linha, int posicao_coluna, string matriz[TAM][TAM], bool pegada) {
+	Adversario adversario; Jogador jogador;
+	inicia_tabuleiro(matriz);
+	if (matriz[posicao_linha][posicao_coluna] == jogador.nome) {
+		return true;
+	}
+	else if (matriz[posicao_linha + 1][posicao_coluna] == " ") {
+
+
+		matriz[posicao_linha + 1][posicao_coluna] = adversario.nome[0];
+	}
+
+
+
+}
 
 
 
