@@ -26,8 +26,7 @@ void mostra_tabuleiro(string matriz[TAM][TAM]) {
 		
 		cout << endl << endl;
 	}
-
-
+	
 }
 
 
