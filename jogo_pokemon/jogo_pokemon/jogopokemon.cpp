@@ -5,12 +5,13 @@
 #include<iostream>
 #include"interface.h"
 #include<string>
+//string matriz[TAM][TAM] = { " " };
 
 int main()
 {
  
 	cout << endl;
-	mostra_tabuleiro(matriz);
+	comeca_jogo(matriz);
 
 	system("pause");
     return 0;

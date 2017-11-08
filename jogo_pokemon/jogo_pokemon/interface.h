@@ -8,8 +8,8 @@ using namespace std;
 
 using namespace std;
 
-void mostra_tabuleiro(string matriz[TAM][TAM]) {
-	inicia_tabuleiro(matriz);
+void mostra_tabuleiro(string matriz[TAM][TAM] ) {
+   
 	cout << endl;
 	cout << "\t";
 	for (int i = 0; i < TAM; i++) {
