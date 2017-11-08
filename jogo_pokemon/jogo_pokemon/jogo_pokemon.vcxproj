@@ -146,6 +146,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Structs_jogo.h" />
     <ClInclude Include="interface.h" />
     <ClInclude Include="Movimentacao.h" />
     <ClInclude Include="operacoes_funcionais.h" />
