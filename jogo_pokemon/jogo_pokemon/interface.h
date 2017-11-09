@@ -19,12 +19,12 @@ void mostra_tabuleiro(string matriz[TAM][TAM] ) {
 		for (int j = 0; j< TAM; j++) {
 		
 			
-			cout << "³°°" << matriz[i][j]<< "°°³";
+			cout <<"³°°°°"<<" "<< matriz[i][j]<<" "<<"°°°°³";
 			
 			
 		}
 		
-		cout << endl << endl;
+		cout << endl << endl << endl;;
 	}
 	
 }

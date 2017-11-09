@@ -5,14 +5,15 @@
 #include<iostream>
 #include"interface.h"
 #include<string>
+#include "Duelo.h"
 //string matriz[TAM][TAM] = { " " };
 
 int main()
 {
  
 	cout << endl;
-	comeca_jogo(matriz);
-
+	//comeca_jogo(matriz);
+	personagens();
 	system("pause");
     return 0;
 }
