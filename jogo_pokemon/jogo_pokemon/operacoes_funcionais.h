@@ -32,19 +32,23 @@ void comeca_jogo(string matriz[TAM][TAM]) {
 
 	
 			
-		matriz[3][3] = jogador.nome;
+	matriz[3][3] = jogador.nome;
 
 		
-	    matriz[posicao_coluna.x][posicao_coluna.x] = adversario.oponente[0].nome;
-	    matriz[posicao_coluna.x][posicao_linha.y] = adversario.oponente[1].nome;
-		matriz[posicao_linha.y][posicao_coluna.x] = adversario.oponente[2].nome;
-		matriz[posicao_linha.y][posicao_linha.y] = adversario.oponente[3].nome;
-		
-		cout << posicao_coluna.x << posicao_linha.y;
+	matriz[posicao_coluna.x][posicao_coluna.x] = adversario.oponente[0].nome;
+	matriz[posicao_coluna.x][posicao_linha.y] = adversario.oponente[1].nome;
+	matriz[posicao_linha.y][posicao_coluna.x] = adversario.oponente[2].nome;
+	matriz[posicao_linha.y][posicao_linha.y] = adversario.oponente[3].nome;
 		
 		
-		move_cima(posicao_linha.y, posicao_coluna.x, matriz,adversario.oponente->nome,adversario.oponente->rastro, 0,jogador.nome);
-		//move_cima(posicao_coluna.x, posicao_linha.y, matriz, adversario.nome, 1, adversario.rastro, jogador.nome);
+		
+		
+	move_cima(posicao_linha.y, posicao_coluna.x, matriz,adversario.oponente->nome,adversario.oponente->rastro, 0,jogador.nome);
+	move_cima(posicao_linha.y, posicao_coluna.x, matriz,adversario.oponente->nome,adversario.oponente->rastro, 1,jogador.nome);
+	move_cima(posicao_linha.y, posicao_coluna.x, matriz,adversario.oponente->nome,adversario.oponente->rastro, 2,jogador.nome);
+	move_cima(posicao_linha.y, posicao_coluna.x, matriz,adversario.oponente->nome,adversario.oponente->rastro, 3,jogador.nome);
+	
+	
 
 
 	}
