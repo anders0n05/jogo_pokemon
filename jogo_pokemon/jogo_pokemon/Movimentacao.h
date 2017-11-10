@@ -95,7 +95,7 @@ void move_diagonal_inferior_direita(int posicao_linha, int posicao_coluna, strin
 
 	}
 
-	else if (matriz[posicao_linha + 1][posicao_coluna + 1] != "" || matriz[posicao_linha + 1][posicao_coluna + 1] == rastro[indice_oponente]) {
+	else if (matriz[posicao_linha + 1][posicao_coluna + 1] != "" || matriz[posicao_linha + 1][posicao_coluna + 1] ==adversario.oponente[indice_oponente].rastro) {
 		move_cima(posicao_linha, posicao_coluna, matriz, oponente ,rastro,indice_oponente,jogador);
 
 	}
@@ -153,7 +153,7 @@ void move_diagonal_superior_direita(int posicao_linha, int posicao_coluna, strin
 
 	}
 
-	else if (matriz[posicao_linha - 1][posicao_coluna + 1] != "" || matriz[posicao_linha - 1][posicao_coluna + 1] == rastro[indice_oponente]) {
+	else if (matriz[posicao_linha - 1][posicao_coluna + 1] != "" || matriz[posicao_linha - 1][posicao_coluna + 1] == adversario.oponente[indice_oponente].rastro) {
 		move_baixo(posicao_linha, posicao_coluna, matriz, oponente ,rastro,indice_oponente,jogador);
 
 	}
@@ -211,7 +211,7 @@ void move_diagonal_superior_esquerda(int posicao_linha, int posicao_coluna, stri
 
 	}
 
-	else if (matriz[posicao_linha - 1][posicao_coluna - 1] != "" || matriz[posicao_linha - 1][posicao_coluna - 1] == rastro[indice_oponente]) {
+	else if (matriz[posicao_linha - 1][posicao_coluna - 1] != "" || matriz[posicao_linha - 1][posicao_coluna - 1] == adversario.oponente[indice_oponente].rastro) {
 		 move_diagonal_superior_direita(posicao_linha, posicao_coluna, matriz, oponente ,rastro,indice_oponente,jogador);
 
 	}
@@ -266,7 +266,7 @@ void move_diagonal_inferior_esquerda(int posicao_linha, int posicao_coluna, stri
 
 	}
 
-	else if (matriz[posicao_linha + 1][posicao_coluna-1] != "" || matriz[posicao_linha + 1][posicao_coluna-1] == rastro[indice_oponente]) {
+	else if (matriz[posicao_linha + 1][posicao_coluna-1] != "" || matriz[posicao_linha + 1][posicao_coluna-1] == adversario.oponente[indice_oponente].rastro) {
 		move_diagonal_superior_esquerda(posicao_linha, posicao_coluna, matriz,oponente,rastro,  indice_oponente,jogador);
 
 	}
@@ -323,7 +323,7 @@ void move_esquerda(int posicao_linha, int posicao_coluna, string matriz[TAM][TAM
 
 	}
 
-	else if (matriz[posicao_linha][posicao_coluna - 1] != ""||matriz[posicao_linha][posicao_coluna-1]==rastro[indice_oponente]) {
+	else if (matriz[posicao_linha][posicao_coluna - 1] != ""||matriz[posicao_linha][posicao_coluna-1]== adversario.oponente[indice_oponente].rastro) {
 		move_diagonal_inferior_direita(posicao_linha, posicao_coluna, matriz,oponente,rastro, indice_oponente,jogador);
 
 	}
@@ -380,7 +380,7 @@ void move_direita(int posicao_linha, int posicao_coluna, string matriz[TAM][TAM]
 
 	}
 
-	else if (matriz[posicao_linha][posicao_coluna + 1] != ""||matriz[posicao_linha][posicao_coluna+1]==rastro[indice_oponente]) {
+	else if (matriz[posicao_linha][posicao_coluna + 1] != ""||matriz[posicao_linha][posicao_coluna+1]== adversario.oponente[indice_oponente].rastro) {
 		move_diagonal_inferior_esquerda(posicao_linha, posicao_coluna, matriz,oponente,rastro, indice_oponente,jogador);
 
 	}
@@ -434,7 +434,7 @@ void move_baixo(int posicao_linha, int posicao_coluna, string matriz[TAM][TAM],s
 
 	}
 
-	else if (matriz[posicao_linha + 1][posicao_coluna] != ""||matriz[posicao_linha+1][posicao_coluna]==rastro[indice_oponente]) {
+	else if (matriz[posicao_linha + 1][posicao_coluna] != ""||matriz[posicao_linha+1][posicao_coluna]== adversario.oponente[indice_oponente].rastro) {
 		move_esquerda(posicao_linha, posicao_coluna, matriz,oponente,rastro, indice_oponente,jogador);
 	}
 
