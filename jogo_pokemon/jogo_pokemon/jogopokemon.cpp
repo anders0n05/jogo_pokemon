@@ -11,10 +11,10 @@
 int main()
 {
  
-	cout << endl;
-	//comeca_jogo(matriz);
-	personagens();
-	system("pause");
+	
+	comeca_jogo(matriz);
+	
+	
     return 0;
 }
 
